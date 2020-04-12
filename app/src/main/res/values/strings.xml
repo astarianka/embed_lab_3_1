@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">EmbedLab3</string>
+    <string name="input">Enter a number</string>
+    <string name="input_button">Calculate</string>
+</resources>

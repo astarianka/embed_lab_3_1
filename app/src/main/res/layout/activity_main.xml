@@ -7,14 +7,29 @@
     tools:context=".MainActivity">
 
     <EditText
+        android:id="@+id/inputTime"
+        android:layout_width="274dp"
+        android:layout_height="75dp"
+        android:ems="10"
+        android:hint="@string/time"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.452" />
+
+    <EditText
         android:id="@+id/inputNumber"
         android:layout_width="274dp"
         android:layout_height="75dp"
-        android:layout_marginTop="328dp"
+        android:layout_marginTop="400dp"
         android:ems="10"
         android:hint="@string/input"
         android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -22,40 +37,42 @@
         android:id="@+id/calculateButton"
         android:layout_width="195dp"
         android:layout_height="58dp"
-        android:layout_marginTop="76dp"
         android:text="@string/input_button"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/inputNumber" />
+        app:layout_constraintTop_toBottomOf="@+id/inputTime"
+        app:layout_constraintVertical_bias="0.857" />
 
     <TextView
         android:id="@+id/output"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:gravity="center"
         android:layout_marginTop="16dp"
         android:layout_marginBottom="16dp"
+        android:gravity="center"
         android:textSize="25sp"
         app:layout_constraintBottom_toTopOf="@+id/inputNumber"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.77" />
+        app:layout_constraintVertical_bias="0.509" />
 
     <TextView
         android:id="@+id/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:gravity="center"
         android:layout_marginTop="16dp"
-        android:layout_marginBottom="16dp"
-        android:textSize="35sp"
+        android:gravity="center"
         android:text="Fermat’s Factorization Method"
-        app:layout_constraintBottom_toTopOf="@+id/output"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toTopOf="@+id/inputTime"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.076" />
 </androidx.constraintlayout.widget.ConstraintLayout>
